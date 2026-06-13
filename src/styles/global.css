@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    /* These are the exact colors from the original Gericht design */
+    --color-gold: #dcca87;
+    --color-crimson: #f5efdb;
+    --color-black: #0c0c0c;
+    --color-gray: #545454;
+    --color-white: #ffffff;
+
+    /* Fonts */
+    --font-base: "Cormorant Upright", serif;
+    --font-alt: "Open Sans", sans-serif;
+}
