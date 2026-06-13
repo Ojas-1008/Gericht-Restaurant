@@ -3,15 +3,16 @@
 An elegant, premium modern restaurant landing page built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Current Project Status
-We have completed the foundational setup and implemented the **SubHeading** component, a highly reusable visual element used to introduce sections.
+We have successfully implemented the **SubHeading** component, the **MenuItem** component, and the **Menu** section, creating a fully animated, responsive layout.
 
 ### Done:
-*   **SubHeading Component**: Built with a responsive layout designed to look great on laptops and mobile devices.
-*   **Aesthetics & Branding**: Set up core Gericht branding variables in `src/styles/global.css` (gold accent colors, typography, etc.).
+*   **SubHeading Component**: Multi-element styled title introducing restaurant sections, featuring entry slide-ins and scaling separators.
+*   **MenuItem Component**: High-end dish/drink card featuring a responsive layout (Name ➔ Dotted Line ➔ Price) with descriptions. It uses a customized transparent shadcn/ui Card wrapper.
+*   **Menu Section Component**: Coordinates lists of dishes in a responsive, two-column grid (`grid-cols-1 md:grid-cols-2`) optimized for mobile, tablet, and laptop screen sizes.
 *   **Animations (Framer Motion)**:
-    *   **Text Title**: Fades and moves down smoothly into view.
-    *   **Decorative Spoon**: Slides in horizontally from the left.
-    *   **Separator**: Expands horizontally outward from the left edge.
+    *   **Staggered Entry**: The parent `Menu` coordinates a cascading fade-and-rise entrance effect (`staggerChildren`) for its `MenuItem` children.
+    *   **Dotted Line Draw-in**: The connecting line scales horizontally (`scaleX`) from left to right when scrolled into view.
+    *   **Micro-interactions**: Hovering over menu items triggers card scaling (`scale: 1.02`), card lifting (`y: -4`), and brightens the dotted line into a solid one.
 *   **Developer Environment**: Structured with React 19, Tailwind CSS v4 (using `@tailwindcss/vite`), and Vite.
 
 ---

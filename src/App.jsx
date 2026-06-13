@@ -1,11 +1,12 @@
-import SubHeading from "./components/SubHeading"
+import Menu from './sections/Menu';
 
 function App() {
   return (
-    <div className="bg-black min-h-screen p-8 flex justify-center items-center">
-      <SubHeading title="Chase The New Flavour" />
+    <div className="bg-black min-h-screen">
+      {/* Other sections like Hero, About, etc. */}
+      <Menu />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
