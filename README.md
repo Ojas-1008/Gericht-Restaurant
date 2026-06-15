@@ -9,10 +9,13 @@ We have successfully implemented the **SubHeading** component, the **MenuItem** 
 *   **SubHeading Component**: Multi-element styled title introducing restaurant sections, featuring entry slide-ins and scaling separators.
 *   **MenuItem Component**: High-end dish/drink card featuring a responsive layout (Name ➔ Dotted Line ➔ Price) with descriptions. It uses a customized transparent shadcn/ui Card wrapper.
 *   **Menu Section Component**: Coordinates lists of dishes in a responsive, two-column grid (`grid-cols-1 md:grid-cols-2`) optimized for mobile, tablet, and laptop screen sizes.
+*   **AwardCard Component**: Premium award card featuring responsive image scaling, typography resizing, and dynamic entrance animation. Uses `framer-motion`'s custom wrapper API.
+*   **Dynamic Awards List**: Integrated all restaurant awards (Bib Gourmand, Rising Star, AA Hospitality, and Outstanding Chef) into `App.jsx`, dynamically rendered using clean configuration arrays.
 *   **Animations (Framer Motion)**:
     *   **Staggered Entry**: The parent `Menu` coordinates a cascading fade-and-rise entrance effect (`staggerChildren`) for its `MenuItem` children.
     *   **Dotted Line Draw-in**: The connecting line scales horizontally (`scaleX`) from left to right when scrolled into view.
     *   **Micro-interactions**: Hovering over menu items triggers card scaling (`scale: 1.02`), card lifting (`y: -4`), and brightens the dotted line into a solid one.
+    *   **Spring Physics**: Award cards feature organic spring movement (stiffness `70`, damping `18`), scaling up and sliding to the right slightly on hover.
 *   **Developer Environment**: Structured with React 19, Tailwind CSS v4 (using `@tailwindcss/vite`), and Vite.
 
 ---
