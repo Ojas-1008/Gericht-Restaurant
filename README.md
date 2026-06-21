@@ -3,9 +3,10 @@
 An elegant, premium modern restaurant landing page built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Current Project Status
-We have successfully implemented the **Navbar** header, **SubHeading** component, **MenuItem** component, and the **Menu** section, creating a fully animated, highly responsive landing page.
+We have successfully implemented the **Navbar** header, **Hero** section, **SubHeading** component, **MenuItem** component, and the **Menu** section, creating a fully animated, highly responsive landing page.
 
 ### Done:
+*   **Hero Component**: A premium split-screen landing presentation featuring a responsive two-column grid, metallic gradient headers, ambient glows, and a floating signature dish showcase.
 *   **Navbar Component**: Pinned global header containing brand logo, responsive navigation lists, desktop separator dividers, and custom Book Table action CTA.
 *   **Scroll State Listener Hook**: Sets up a cleanup-safe window scroll listener that dynamically transitions the header from a spacious transparent layout to a condensed, border-trimmed glassmorphism backdrop (`backdrop-blur-md bg-black/80`) once scrolled past `50px`.
 *   **SubHeading Component**: Multi-element styled title introducing restaurant sections, featuring entry slide-ins and scaling separators.
@@ -14,6 +15,10 @@ We have successfully implemented the **Navbar** header, **SubHeading** component
 *   **AwardCard Component**: Premium award card featuring responsive image scaling, typography resizing, and dynamic entrance animation. Uses `framer-motion`'s custom wrapper API.
 *   **Dynamic Awards List**: Integrated all restaurant awards (Bib Gourmand, Rising Star, AA Hospitality, and Outstanding Chef) into `App.jsx`, dynamically rendered using clean configuration arrays.
 *   **Animations & Micro-interactions**:
+    *   **Hero Entrance Orchestration**: Staggered child fade-and-rise animations using matching physics parameters (stiffness `100`, damping `10`) to slide panels in from opposite horizontal directions synchronously.
+    *   **Showcase Plate Floating Loop**: High-performance continuous floating loop translation animation on the food plate image.
+    *   **Micro-Parallax Hover**: Decorative offset gold wireframe border behind the food image translates dynamically in reaction to user cursor hovering.
+    *   **Button Affordance**: Hover-triggered sliding indicator using rotating `ArrowUpRight` icon translations.
     *   **Navbar Page Entry**: Soft drop-down fade-in animation powered by custom spring physics (`staggerChildren` and `type: "spring"`).
     *   **Underline Grow Effect**: Desktop links feature a sliding underline border that scales from 0 to 100% width on hover.
     *   **Icon Hover Scale**: Lucide hamburger and exit icons smoothly scale up by 10% on mouse-hover.
