@@ -3,10 +3,11 @@
 An elegant, premium modern restaurant landing page built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Current Project Status
-We have successfully implemented the **Navbar** header, **Hero** section, **SubHeading** component, **MenuItem** component, and the **Menu** section, creating a fully animated, highly responsive landing page.
+We have successfully implemented the **Navbar** header, **Hero** section, **About** section, **SubHeading** component, **MenuItem** component, and the **Menu** section, creating a fully animated, highly responsive landing page.
 
 ### Done:
 *   **Hero Component**: A premium split-screen landing presentation featuring a responsive two-column grid, metallic gradient headers, ambient glows, and a floating signature dish showcase.
+*   **About Component**: A stunning 3-column split presentation comprising "About Us" and "Our History" sections, balanced with symmetric 50-word copy blocks, separated by a central floating knife graphic.
 *   **Navbar Component**: Pinned global header containing brand logo, responsive navigation lists, desktop separator dividers, and custom Book Table action CTA.
 *   **Scroll State Listener Hook**: Sets up a cleanup-safe window scroll listener that dynamically transitions the header from a spacious transparent layout to a condensed, border-trimmed glassmorphism backdrop (`backdrop-blur-md bg-black/80`) once scrolled past `50px`.
 *   **SubHeading Component**: Multi-element styled title introducing restaurant sections, featuring entry slide-ins and scaling separators.
@@ -15,6 +16,9 @@ We have successfully implemented the **Navbar** header, **Hero** section, **SubH
 *   **AwardCard Component**: Premium award card featuring responsive image scaling, typography resizing, and dynamic entrance animation. Uses `framer-motion`'s custom wrapper API.
 *   **Dynamic Awards List**: Integrated all restaurant awards (Bib Gourmand, Rising Star, AA Hospitality, and Outstanding Chef) into `App.jsx`, dynamically rendered using clean configuration arrays.
 *   **Animations & Micro-interactions**:
+    *   **About Section Viewport Entrances**: Opposing horizontal slide-ins (`x: -50` / `x: 50`) for the text content triggered as they scroll into view.
+    *   **Rotating Watermark**: Slow, continuous infinite rotation (`30s` linear loop) on the absolute background watermark.
+    *   **Central Knife Floating Loop**: Gentle infinite floating translation (`y: [0, -15, 0]`) on the central knife asset overlaid on a warm backdrop radial glow.
     *   **Hero Entrance Orchestration**: Staggered child fade-and-rise animations using matching physics parameters (stiffness `100`, damping `10`) to slide panels in from opposite horizontal directions synchronously.
     *   **Showcase Plate Floating Loop**: High-performance continuous floating loop translation animation on the food plate image.
     *   **Micro-Parallax Hover**: Decorative offset gold wireframe border behind the food image translates dynamically in reaction to user cursor hovering.
