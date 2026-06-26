@@ -13,9 +13,15 @@ We have successfully implemented the **Navbar** header, **Hero** section, **Abou
 *   **SubHeading Component**: Multi-element styled title introducing restaurant sections, featuring entry slide-ins and scaling separators.
 *   **MenuItem Component**: High-end dish/drink card featuring a responsive layout (Name ➔ Dotted Line ➔ Price) with descriptions. It uses a customized transparent shadcn/ui Card wrapper.
 *   **Menu Section Component**: Coordinates lists of dishes in a responsive, two-column grid (`grid-cols-1 md:grid-cols-2`) optimized for mobile, tablet, and laptop screen sizes.
+*   **Chef Component**: A highly immersive, responsive two-column grid presentation displaying the chef's culinary philosophy. It features custom-designed blockquote cards with accent borders, names, titles, and signature images.
+*   **Intro Component**: A cinematic full-screen HTML5 video background display featuring loop control, native media control hiding, inline playback configuration, and browser autoplay optimization settings.
 *   **AwardCard Component**: Premium award card featuring responsive image scaling, typography resizing, and dynamic entrance animation. Uses `framer-motion`'s custom wrapper API.
 *   **Dynamic Awards List**: Integrated all restaurant awards (Bib Gourmand, Rising Star, AA Hospitality, and Outstanding Chef) into `App.jsx`, dynamically rendered using clean configuration arrays.
 *   **Animations & Micro-interactions**:
+    *   **Chef Image Entrance**: An entrance transition that slides the chef image in from the left while rotating it from `-5deg` to its final alignment.
+    *   **Staggered Text Cascade**: Staggered cascading animations (`staggerChildren`) coordinating the entrance of the chef's words, quote cards, and signature panels.
+    *   **Video Playback Toggle**: An interactive dark overlay fading out (`opacity: 0`) and setting dynamic pointer events (`pointer-events-none`) when the video starts playing, letting users watch the video cleanly.
+    *   **Pulsing Play Button**: A circular play/pause button trigger featuring an infinite pulsing transition (`scale: [1, 1.08, 1]`) to draw user interaction.
     *   **About Section Viewport Entrances**: Opposing horizontal slide-ins (`x: -50` / `x: 50`) for the text content triggered as they scroll into view.
     *   **Rotating Watermark**: Slow, continuous infinite rotation (`30s` linear loop) on the absolute background watermark.
     *   **Central Knife Floating Loop**: Gentle infinite floating translation (`y: [0, -15, 0]`) on the central knife asset overlaid on a warm backdrop radial glow.

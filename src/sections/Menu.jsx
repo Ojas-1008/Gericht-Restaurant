@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MenuItem from "@/components/MenuItem";
+import SubHeading from "@/components/SubHeading";
+import { Button } from "@/components/ui/button";
+import { wines, cocktails } from "@/constants/data";
 
 // Parent variants that coordinate the staggered animations of its children
 const containerVariants = {
@@ -19,19 +22,14 @@ const containerVariants = {
  * Features a responsive grid (2 columns on laptop screens) and staggered load animations.
  */
 function Menu() {
-  const wines = [
-    { name: "Chapel Hill Shiraz", price: "$56", tags: "AU | Bottle" },
-    { name: "Catena Malbec", price: "$59", tags: "AR | Bottle" },
-    { name: "La Vieille Ferme", price: "$44", tags: "FR | 750ml" },
-    { name: "Primitivo di Manduria", price: "$62", tags: "IT | Bottle" },
-  ];
 
   return (
-    <section className="bg-black text-white p-12">
-      {/* Section Header */}
-      <h2 className="text-center text-4xl md:text-5xl lg:text-6xl mb-8 lg:mb-12 font-semibold">
-        Our Menu
-      </h2>
+    <section className="bg-black min-h-screen py-20 px-6 md:px-12 lg:px-26 flex flex-col justify-center items-center relative w-full">
+
+      <div className="flex flex-col items-center text-center mb-16">
+        <SubHeading title="Bar Menu" />
+        <h2 className="font-base text-gold text-4xl md:text-5xl lg:text-6xl font-semibold capitalize tracking-wider">Menu That Fits Your Palate</h2>
+      </div>
 
       {/* Grid container with staggered entry animations on scroll */}
       <motion.div
@@ -39,17 +37,36 @@ function Menu() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-[1200px] mx-auto px-4"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 max-w-[1200px] w-full mx-auto px-4 mb-16"
       >
-        {wines.map((wine, index) => (
-          <MenuItem
-            key={index}
-            name={wine.name}
-            price={wine.price}
-            tags={wine.tags}
-          />
-        ))}
+        <div className="flex flex-col w-full">
+          <h3 className="font-base text-white text-3xl lg:text-4xl font-semibold mb-8 tracking-wider text-center">Wine & Beer</h3>
+          {wines.map((item, index) => (
+            <MenuItem
+              key={index}
+              name={item.name}
+              price={item.price}
+              tags={item.tags}
+            />
+          ))}
+        </div>
+
+        <div className="flex flex-col w-full">
+          <h3 className="font-base text-white text-3xl lg:text-4xl font-semibold mb-8 tracking-wider text-center">Cocktails</h3>
+          {cocktails.map((item, index) => (
+            <MenuItem
+              key={index}
+              name={item.name}
+              price={item.price}
+              tags={item.tags}
+            />
+          ))}
+        </div>
       </motion.div>
+
+      <div className="flex justify-center w-full mt-8">
+        <Button className="rounded-none border-gold text-gold hover:bg-gold hover:text-black transition-all duration-500 uppercase tracking-wider px-6 h-10">View More</Button>
+      </div>
     </section>
   );
 }

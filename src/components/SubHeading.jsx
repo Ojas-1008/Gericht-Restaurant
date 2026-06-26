@@ -40,7 +40,7 @@ function SubHeading({ title }) {
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         className="origin-left"
       >
-        <Separator className="bg-gold/20 my-2 w-24 md:w-32 mt-3" />
+        <Separator className="bg-gold/40 my-2 w-24 md:w-32 mt-3" />
       </motion.div>
     </div>
   );

@@ -28,7 +28,7 @@ function MenuItem({ name, price, tags }) {
       whileHover={{ scale: 1.02, y: -4 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
-      <Card className="flex flex-col gap-1 w-full bg-transparent border-none shadow-none hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
+      <Card className="flex flex-col gap-1 w-full bg-transparent border-none shadow-none hover:bg-white/6 p-4 rounded-lg transition-all duration-300">
         <div className="flex justify-between items-center w-full">
           {/* Item Name */}
           <p className="font-base text-gold text-lg lg:text-2xl capitalize font-semibold">
