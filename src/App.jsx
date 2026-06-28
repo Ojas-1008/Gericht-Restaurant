@@ -5,6 +5,7 @@ import About from './sections/About';
 import Menu from './sections/Menu';
 import Chef from './sections/Chef';
 import Intro from './sections/Intro';
+import Laurels from './sections/Laurels';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Menu />
       <Chef />
       <Intro />
+      <Laurels />
     </main>
   );
 }
