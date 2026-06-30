@@ -2,6 +2,37 @@
 
 An elegant, premium modern restaurant landing page built with React, Vite, and Tailwind CSS.
 
+## 📸 Component Previews
+
+Here are the screenshots of the different components/sections of the Gericht Restaurant website:
+
+### 1. Header & Hero Section
+![Header & Hero](screenshots/hero.png)
+
+### 2. About Us Section
+![About Us](screenshots/about.png)
+
+### 3. Special Menu Section
+![Special Menu](screenshots/menu.png)
+
+### 4. Chef's Word Section
+![Chef's Word](screenshots/chef.png)
+
+### 5. Video Intro Section
+![Video Intro](screenshots/intro.png)
+
+### 6. Our Laurels Section
+![Our Laurels](screenshots/laurels.png)
+
+### 7. Gallery Section
+![Gallery](screenshots/gallery.png)
+
+### 8. Find Us (Contact) Section
+![Find Us](screenshots/findus.png)
+
+### 9. Footer & Newsletter Section
+![Footer & Newsletter](screenshots/footer.png)
+
 ## 🚀 Current Project Status
 We have successfully implemented the **Navbar** header, **Hero** section, **About** section, **SubHeading** component, **MenuItem** component, and the **Menu** section, creating a fully animated, highly responsive landing page.
 

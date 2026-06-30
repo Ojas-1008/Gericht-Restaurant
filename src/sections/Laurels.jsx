@@ -22,7 +22,7 @@ function Laurels() {
                     <motion.h2
                         initial={{ y: -30, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
-                        viewport={{ once: true, amount: 0.25 }}
+                        viewport={{ once: true, amount: 0.50 }}
                         transition={{ duration: 0.6 }}
                         className="font-base text-gold text-4xl md:text-5xl lg:text-6xl font-semibold capitalize tracking-wider mb-4">Our Laurels</motion.h2>
                     <Separator className="bg-gold/20 my-6 w-full max-w-[120px]" />
@@ -46,7 +46,7 @@ function Laurels() {
                     <motion.img
                         initial={{ opacity: 0, x: 60 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.25 }}
+                        viewport={{ once: true, amount: 0.50 }}
                         transition={{
                             type: "spring",
                             stiffness: 80,

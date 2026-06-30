@@ -14,7 +14,7 @@ function SubHeading({ title }) {
       <motion.p
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.50 }}
         transition={{ duration: 0.5 }}
         className="font-base text-gold uppercase text-2xl md:text-3xl tracking-wider"
       >
@@ -25,7 +25,7 @@ function SubHeading({ title }) {
       <motion.img
         initial={{ opacity: 0, x: -60 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.50 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         src={spoonImg}
         alt="spoon_image"
@@ -36,7 +36,7 @@ function SubHeading({ title }) {
       <motion.div
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.50 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         className="origin-left"
       >

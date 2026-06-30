@@ -46,7 +46,7 @@ function Hero() {
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.50 }}
                     className="flex flex-col justify-center items-start w-full relative"
                 >
                     {/* Soft ambient background glow */}
@@ -90,7 +90,7 @@ function Hero() {
                     variants={rightItemVariants}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.50 }}
                     className="group relative flex justify-center items-center w-full"
                 >
                     {/* Ambient warm backlight */}

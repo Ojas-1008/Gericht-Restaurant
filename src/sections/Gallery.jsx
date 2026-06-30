@@ -51,7 +51,7 @@ function Gallery() {
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.50 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className='flex flex-col justify-center items-start w-full lg:max-w-[450px]'>
         <SubHeading title="Instagram" />
@@ -69,7 +69,7 @@ function Gallery() {
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.50 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className='w-full lg:flex-1 min-w-0 relative'>
         

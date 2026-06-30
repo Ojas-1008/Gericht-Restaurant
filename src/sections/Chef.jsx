@@ -45,7 +45,7 @@ function Chef() {
                     <motion.img
                         initial={{ opacity: 0, x: -60, rotate: -5 }}
                         whileInView={{ opacity: 1, x: 0, rotate: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.50 }}
                         transition={{
                             duration: 1.2,
                             ease: "easeOut"
@@ -60,7 +60,7 @@ function Chef() {
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.50 }}
                     className="flex flex-col justify-center items-start w-full"
                 >
                     <motion.div variants={childVariants}>

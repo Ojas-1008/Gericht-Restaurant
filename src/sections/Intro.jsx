@@ -32,7 +32,7 @@ function Intro() {
         <motion.div
             initial={{ scale: 0.95, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.50 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="w-full h-screen relative bg-black flex justify-center items-center overflow-hidden"
         >

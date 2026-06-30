@@ -27,7 +27,7 @@ function About() {
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.50 }}
                     transition={{
                         duration: 1.5,
                         ease: "easeOut",
@@ -52,7 +52,7 @@ function About() {
                     <motion.img
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.50 }}
                         animate={{
                             y: [0, -15, 0],
                         }}
@@ -74,7 +74,7 @@ function About() {
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.50 }}
                     transition={{
                         duration: 1.5,
                         ease: "easeOut",

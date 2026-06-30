@@ -17,7 +17,7 @@ function AwardCard({ title, subtitle, imgUrl, index }) {
       initial={{ opacity: 0, x: -60 }}
       // Animate to visible state when in viewport
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.50 }}
       // Premium spring physics for micro-interactions on hover
       whileHover={{ scale: 1.05, x: 20 }}
       transition={{

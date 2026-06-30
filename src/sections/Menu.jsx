@@ -36,7 +36,7 @@ function Menu() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.50 }}
         className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 max-w-[1200px] w-full mx-auto px-4 mb-16"
       >
         <div className="flex flex-col w-full">

@@ -39,7 +39,7 @@ function MenuItem({ name, price, tags }) {
           <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.50 }}
             style={{ originX: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex-1 h-[1px] border-b border-dashed border-gold/40 group-hover/card:border-gold group-hover/card:border-solid mx-4 self-center transition-all duration-300"
