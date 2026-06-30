@@ -18,7 +18,12 @@ We have successfully implemented the **Navbar** header, **Hero** section, **Abou
 *   **AwardCard Component**: Premium award card featuring responsive image scaling, typography resizing, and dynamic entrance animation. Uses `framer-motion`'s custom wrapper API.
 *   **Laurels Section Component**: A premium split-screen presentation featuring a responsive two-column layout: a left column displaying a staggered, hover-responsive grid of `AwardCard` components and a refined gold divider, and a right column highlighting the laurels trophy image.
 *   **Dynamic Awards List**: Integrated all restaurant awards (Bib Gourmand, Rising Star, AA Hospitality, and Outstanding Chef) into `App.jsx`, dynamically rendered using clean configuration arrays.
+*   **Gallery Component**: An interactive, responsive showcase displaying restaurant dishes and kitchen life. Uses a split-column layout on desktop and stacks vertically on mobile.
 *   **Animations & Micro-interactions**:
+    *   **Scroll-Snap Carousel**: Horizontal carousel featuring CSS scroll-snapping (`snap-x snap-mandatory`) and custom browser scrollbar hiding.
+    *   **Interactive Navigation Arrows**: Golden circular arrow controls that programmatically scroll the carousel left/right using React `useRef`.
+    *   **Card Hover Lift Animation**: Smooth spring-based Framer Motion translate animation (`whileHover={{ y: -8 }}`) that lifts each card on hover.
+    *   **Instagram Overlay Fade**: A dark semi-transparent overlay and scaling Instagram brand icon that fade in when hovering over individual gallery images.
     *   **Chef Image Entrance**: An entrance transition that slides the chef image in from the left while rotating it from `-5deg` to its final alignment.
     *   **Staggered Text Cascade**: Staggered cascading animations (`staggerChildren`) coordinating the entrance of the chef's words, quote cards, and signature panels.
     *   **Video Playback Toggle**: An interactive dark overlay fading out (`opacity: 0`) and setting dynamic pointer events (`pointer-events-none`) when the video starts playing, letting users watch the video cleanly.

@@ -6,6 +6,7 @@ import Menu from './sections/Menu';
 import Chef from './sections/Chef';
 import Intro from './sections/Intro';
 import Laurels from './sections/Laurels';
+import Gallery from './sections/Gallery';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Chef />
       <Intro />
       <Laurels />
+      <Gallery />
     </main>
   );
 }
