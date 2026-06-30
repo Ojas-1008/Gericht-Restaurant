@@ -63,7 +63,7 @@ function Footer() {
         <motion.footer
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.50 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative bg-black w-full flex flex-col justify-center items-center py-20 px-6 md:px-12 lg:px-24 overflow-hidden"
         >
