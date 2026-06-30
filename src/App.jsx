@@ -7,6 +7,8 @@ import Chef from './sections/Chef';
 import Intro from './sections/Intro';
 import Laurels from './sections/Laurels';
 import Gallery from './sections/Gallery';
+import FindUs from './sections/FindUs';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Intro />
       <Laurels />
       <Gallery />
+      <FindUs />
+      <Footer />
     </main>
   );
 }
